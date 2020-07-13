@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+    static int converter(int a){
+        return 60*a;
+    }
+
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the minutes to convert to seconds");
+        int a = scanner.nextInt();
+        int b= converter(a);
+
+        System.out.println(a+" minutes = "+b+" seconds");
+
+    }
+}
